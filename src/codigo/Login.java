@@ -33,7 +33,6 @@ Connection cn= cc.conexion();
                 //Creo una nueva ventana para despues de iniciar sesion
                 PostLogin menu = new PostLogin();
                 menu.setVisible(true);
-                menu.pack();
             }
             if(!usuario.equals(contraseña)){
                 JOptionPane.showMessageDialog(null, "Error en el login");
@@ -75,6 +74,7 @@ Connection cn= cc.conexion();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(400, 100));
 
         jUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jUsuario.setText("Usuario");
